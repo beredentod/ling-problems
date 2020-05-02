@@ -1,3 +1,6 @@
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # ling-problems
 A TeX tool for writing and formatting linguistics problems, based on International Linguistics Olympiad's format
 
