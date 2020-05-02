@@ -1,0 +1,87 @@
+\documentclass[a4paper, 12pt, english]{article}
+\usepackage[legalpaper, portrait, margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{titling}
+\usepackage{hyperref}
+
+% here we import the package
+\usepackage{./lingproblems}
+
+% remove page numbering
+\pagenumbering{gobble}%
+
+\author{}
+\date{}
+% we reduce the space between the title and the beginning of the document
+\title{\textbf{My favourite problems}\vspace{-4em}}
+
+
+% we reduce the space between the top of the page and the title
+\setlength{\droptitle}{-7em}
+
+\begin{document}
+
+\maketitle{}
+
+% here we add a new problem
+\begin{problem*}{Michał Boroń}
+
+Below you can find some equations and inequalities written in the names of Basque and reconstructed Iberian numbers.
+Linguists were astonished to encounter some striking similarities between these two languages.
+In the following the Basque names are mixed together with the Iberian reconstructions.\\
+The spelling of the Iberian names is based on Eduardo Ordu\~na's research.[citation]
+\begin{align}
+o\acute{r}keiba\acute{r}ban &= hogeita\; lau + sisbi\label{eq:first} \\
+aba\acute{r}\acute{s}ei &= lau^{bi} \\
+hamabi + laur &= hamasei \\
+hogei &= irur \times sisbi - bat \\
+hiru \times irur + ban &= bi \times borste \\
+laur \times bost &= o\acute{r}kei \\
+o\acute{r}kei - hamar &= hiru + zazpi \\
+aba\acute{r}kebi + hiru &= hamabost \\
+borste &< zazpi\label{eq:last}
+\end{align}
+
+% here we define tasks
+\begin{tasks}
+\task{Rewrite the equations from \ref{eq:first} to \ref{eq:last} in numerals.}
+\task{Match in pairs the corresponding names of numbers from the set $\{1,2, ..., 7, 10, 20\}$.
+One number has just one form for both languages.}
+\end{tasks}
+
+% here we give some info about the language and possibly about some atypical phonemes used in the problem
+\begin{langinfo}
+Iberian belonged to an unclassified language family, was spoken on the Mediterranean coast of the Iberian Peninsula
+and became extinct around 1st--2nd century AD.\\
+\indent Basque is considered to be a language isolate.
+It is spoken in the Basque Country in the north of Spain and the south of France by approx. 750 000 native speakers (2016).\\
+
+Note that \textbf{\'r} and \textbf{r} as well as \textbf{\'s} and \textbf{s} should be treated as two distinct consonants.
+\end{langinfo}
+
+% we end the problem
+\end{problem*}
+
+
+
+% here we add a new problem whose name isn't going to be shown
+\begin{problem}{Another problem}{}
+
+This very hard problem does have a name. Yet, it doesn't have an author.
+
+% here we define tasks
+\begin{tasks}
+\task{This is the first task.}
+\end{tasks}
+
+% here we give some info about the language and possibly about some atypical phonemes used in the problem
+\begin{langinfo*}
+This is my favourite language spoken in X by Y speakers.
+\end{langinfo*}
+
+% we end the problem
+\end{problem}
+
+
+\end{document}
