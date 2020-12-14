@@ -14,7 +14,7 @@ main ```.tex``` file. It means that you should save ```.sty``` file in that dire
 Otherwise, I would recommend typing in your favourite web search engine: ''how to install a .sty package on $your operating system$''.
 This question is answered for sure.
 In spite of that, the general way to do it is to make a new directory with the name of the package, i.e.
-```lingproblems```, in the path where other directories of other packages are stored. On my machine it is, for example: ```usr/share/texlive/texmf-dist/tex/latex/```.  Then, copy
+```lingproblems```, in the path where other directories of other packages are stored. On my machine it is, for example: ```/usr/share/texlive/texmf-dist/tex/latex/```.  Then, copy
 the ```.sty``` file to the newly created directory. After that, you will need to update the whole directory with all other TeX packages.
 On UNIX-based systems it can be done with
 ```
