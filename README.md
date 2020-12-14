@@ -5,8 +5,6 @@
 A TeX tool for writing and formatting linguistics problems, based on International Linguistics Olympiad's format
 
 ## Installing
-**Please not that that the class ```lingproblems.cls``` is just a _beta_ version and is not fully stable.**
-
 Please use the package ```lingproblems.sty``` instead.
 
 If you don’t install the package on your local computer to make it accessible for all the files,
