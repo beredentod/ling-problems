@@ -67,6 +67,9 @@
 \newenvironment{tasks}
 {\begin{enumerate}[label={\textbf{(\alph*)}}]}
 {\end{enumerate}}
+% task with points as ##2
+\newcommand{\taskp}[2]{\item ##1 \hspace*{\fill}[\textit{##2}]}
+% task without points
 \newcommand{\task}[1]{\item ##1}
 
 }{}
@@ -95,6 +98,9 @@
 \newenvironment{tasks}
 {\begin{enumerate}[label={\textbf{(\alph*)}}]}
 {\end{enumerate}}
+% task with points as ##2
+\newcommand{\taskp}[2]{\item ##1 \hspace*{\fill}[\textit{##2}]}
+% task without points
 \newcommand{\task}[1]{\item ##1}
 
 }{}
