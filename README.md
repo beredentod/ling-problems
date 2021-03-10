@@ -26,5 +26,5 @@ or something similar.
 
 Please view the file ```manual.pdf``` in which I demonstrate how to use the package ```lingproblems.sty```.
 
-### Contributions
+## Contributions
 This tool is used at the National German Olympiad in Linguistics. 
