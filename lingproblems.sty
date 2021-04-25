@@ -38,18 +38,21 @@
 \fontencoding{U}\fontfamily{futs}\selectfont\char#1}}
 \newcommand*{\danger}{\TakeFourierOrnament{66}}
 
-
+% a command for placing the name of the problem as a new section
 \newcommand{\placename}[1]{\section*{\large #1}}%
 
+%---------------------------------------------------------------
 
 % new problem
-\newenvironment{problem}[2]{
+\newenvironment{lingproblem}[2]{
 
 % assign the problem name and the author
 \newcommand{\title@}{#1}
 \newcommand{\author@}{#2}
 
+% new unindexed section with the name of the problem
 \placename{\title@}
+
 
 % add language info
 \newenvironment{langinfo}
@@ -57,17 +60,19 @@
 {\hspace*{\fill} \text{---\textit{\author@}}}
 {}
 
+
 % add language info without an author
 \newenvironment{langinfo*}
 {\noindent \danger \: }
 {}
 {}
 
+
 % add tasks
 \newenvironment{tasks}
 {\begin{enumerate}[label={\textbf{(\alph*)}}]}
 {\end{enumerate}}
-% task with points as ##2
+% task with points as the second arg
 \newcommand{\taskp}[2]{\item ##1 \hspace*{\fill}[\textit{##2}]}
 % task without points
 \newcommand{\task}[1]{\item ##1}
@@ -75,18 +80,21 @@
 }{}
 % END problem
 
+%---------------------------------------------------------------
 
 % new problem without title
-\newenvironment{problem*}[1]{
+\newenvironment{lingproblem*}[1]{
 
 % assign the problem's the author
 \newcommand{\author@}{#1}
+
 
 % add language info
 \newenvironment{langinfo}
 {\noindent \danger \: }
 {\hspace*{\fill} \text{---\textit{\author@}}}
 {}
+
 
 % add language info without an author
 \newenvironment{langinfo*}
@@ -98,7 +106,7 @@
 \newenvironment{tasks}
 {\begin{enumerate}[label={\textbf{(\alph*)}}]}
 {\end{enumerate}}
-% task with points as ##2
+% task with points as the second arg
 \newcommand{\taskp}[2]{\item ##1 \hspace*{\fill}[\textit{##2}]}
 % task without points
 \newcommand{\task}[1]{\item ##1}
